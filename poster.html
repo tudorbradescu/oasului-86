@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiș A4 · Oașului 86</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#211D18;--gold:#9A7842;--cream:#FBF9F5;--line:#E4DBCB;--soft:#5B5248}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#cfcabf;font-family:"Inter",sans-serif;color:var(--ink);padding:24px}
+  .toolbar{max-width:794px;margin:0 auto 16px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+  .toolbar button{background:var(--ink);color:var(--cream);border:0;border-radius:999px;padding:11px 22px;font-weight:600;cursor:pointer;font-size:15px}
+  .toolbar p{font-size:13px;color:#3a342c}
+  /* A4 sheet */
+  .sheet{
+    width:794px;min-height:1123px;background:var(--cream);margin:0 auto;
+    box-shadow:0 18px 50px -18px rgba(0,0,0,.5);padding:54px 56px;display:flex;flex-direction:column
+  }
+  .ph-head{text-align:center;border-bottom:2px solid var(--ink);padding-bottom:20px}
+  .ph-eyebrow{font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:700}
+  .ph-title{font-family:"Cormorant Garamond",serif;font-size:52px;font-weight:700;line-height:1.04;margin:8px 0 6px}
+  .ph-sub{font-size:17px;color:var(--soft)}
+  .ph-photos{display:grid;grid-template-columns:1.6fr 1fr;gap:10px;margin:22px 0}
+  .ph-photos img{width:100%;height:100%;object-fit:cover;border-radius:8px;max-height:300px}
+  .ph-photos .col{display:grid;grid-template-rows:1fr 1fr;gap:10px}
+  .ph-photos .col img{max-height:145px}
+  .ph-body{display:grid;grid-template-columns:1.35fr 1fr;gap:30px;flex:1;align-items:center;margin-top:6px}
+  .ph-feats{list-style:none;display:flex;flex-direction:column;gap:11px}
+  .ph-feats li{position:relative;padding-left:26px;font-size:16.5px;color:#2c271f}
+  .ph-feats li::before{content:"✦";position:absolute;left:0;top:1px;color:var(--gold);font-size:14px}
+  .ph-feats li b{font-weight:700}
+  .ph-qr{text-align:center;border-left:1px solid var(--line);padding-left:28px}
+  .ph-qr img{width:200px;height:200px}
+  .ph-qr .scan{font-size:14px;color:var(--soft);margin-top:8px;line-height:1.4}
+  .ph-qr .url{font-weight:700;font-size:14px;color:var(--ink);word-break:break-all}
+  .ph-price{background:var(--ink);color:var(--cream);border-radius:12px;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;margin:20px 0 10px;flex-wrap:wrap;gap:10px}
+  .ph-price .p b{font-family:"Cormorant Garamond",serif;font-size:42px;display:block;line-height:1}
+  .ph-price .p span{font-size:13px;color:#c9bda8;letter-spacing:.05em}
+  .ph-price .badge{border:1px solid var(--gold);color:#e9d9be;border-radius:999px;padding:7px 16px;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+  .ph-foot{text-align:center;border-top:2px solid var(--ink);padding-top:16px;margin-top:6px}
+  .ph-foot .name{font-family:"Cormorant Garamond",serif;font-size:30px;font-weight:600}
+  .ph-foot .tel{font-size:26px;font-weight:700;letter-spacing:.02em;margin-top:2px}
+  .ph-foot .meta{font-size:13px;color:var(--soft);margin-top:6px}
+  @media print{
+    @page{size:A4;margin:0}
+    body{background:#fff;padding:0}
+    .toolbar{display:none}
+    .sheet{box-shadow:none;margin:0;width:210mm;min-height:297mm;padding:14mm 15mm}
+  }
+</style>
+</head>
+<body>
+  <div class="toolbar">
+    <p>Apasă „Printează / Salvează PDF" → alege „Salvează ca PDF" sau printează direct. Format A4.</p>
+    <button onclick="window.print()">🖨️ Printează / Salvează PDF</button>
+  </div>
+
+  <div class="sheet">
+    <div class="ph-head">
+      <div class="ph-eyebrow">De vânzare · Direct proprietar</div>
+      <div class="ph-title">Apartament 3 camere</div>
+      <div class="ph-sub">Oașului 86, Bloc H2, etaj 5 · Cluj-Napoca, cartier Iris · 90 mp · complet renovat 2022</div>
+    </div>
+
+    <div class="ph-photos">
+      <img src="images/img-01.jpg" alt="Living">
+      <div class="col">
+        <img src="images/img-09.jpg" alt="Bucătărie">
+        <img src="images/img-11.jpg" alt="Baie">
+      </div>
+    </div>
+
+    <div class="ph-price">
+      <div class="p"><b>250.000 €</b><span>preț negociabil · loc parcare +10.000 €</span></div>
+      <div class="badge">0% comision</div>
+    </div>
+
+    <div class="ph-body">
+      <ul class="ph-feats">
+        <li><b>Mobilat & utilat premium</b>, gata de mutare</li>
+        <li>3 camere, <b>decomandat</b> · 2 băi · 2 dressinguri · 2 balcoane</li>
+        <li>Parchet Egger · faianță & gresie Italia · sanitare REA</li>
+        <li>Bucătărie Bosch · hotă Pando · mașină spălat vase</li>
+        <li>3 climatizoare WiFi · centrală proprie · rulouri electrice</li>
+        <li>Expunere <b>Sud-Vest</b>, foarte luminos · certificat <b>clasa A</b></li>
+        <li>Bloc 2015 izolat · 2 lifturi · tramvai la 1 minut</li>
+      </ul>
+      <div class="ph-qr">
+        <img src="images/qr.png" alt="QR cod">
+        <div class="scan">Scanează pentru<br>poze & toate detaliile</div>
+        <div class="url">tudorbradescu.github.io/oasului-86</div>
+      </div>
+    </div>
+
+    <div class="ph-foot">
+      <div class="name">Bradescu Tudor</div>
+      <div class="tel">📞 +40 727 819 906</div>
+      <div class="meta">Intabulat · acte la zi · vizionări la cerere</div>
+    </div>
+  </div>
+</body>
+</html>
