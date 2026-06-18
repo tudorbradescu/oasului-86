@@ -6,13 +6,16 @@ const PHOTOS = [
   ["img-02.jpg", "Living", "Living room"],
   ["img-03.jpg", "Dormitor matrimonial", "Master bedroom"],
   ["img-04.jpg", "Dormitor copil", "Children's bedroom"],
-  ["img-05.jpg", "Baie cu cadă", "Bathroom with bathtub"],
-  ["img-06.jpg", "Baie · oglindă cu LED", "Bathroom · LED mirror"],
-  ["img-07.jpg", "Spălătorie · mașină spălat & uscător", "Laundry · washer & dryer"],
-  ["img-08.jpg", "Baie cu duș", "Bathroom with shower"],
-  ["img-09.jpg", "Hol de intrare", "Entrance hallway"],
-  ["img-10.jpg", "Balcon · vedere", "Balcony · view"],
-  ["img-11.jpg", "Balcon · expunere Sud-Vest", "Balcony · South-West view"],
+  ["img-05.jpg", "Dormitor copil", "Children's bedroom"],
+  ["img-06.jpg", "Baie cu cadă", "Bathroom with bathtub"],
+  ["img-07.jpg", "Baie · oglindă cu LED", "Bathroom · LED mirror"],
+  ["img-08.jpg", "Spălătorie · mașină spălat & uscător", "Laundry · washer & dryer"],
+  ["img-09.jpg", "Baie cu duș", "Bathroom with shower"],
+  ["img-10.jpg", "Baie cu duș", "Bathroom with shower"],
+  ["img-11.jpg", "Hol de intrare", "Entrance hallway"],
+  ["img-12.jpg", "Balcon · vedere", "Balcony · view"],
+  ["img-13.jpg", "Balcon · panoramă", "Balcony · panorama"],
+  ["img-14.jpg", "Balcon · expunere Sud-Vest", "Balcony · South-West view"],
 ];
 
 // ---------- Language ----------
