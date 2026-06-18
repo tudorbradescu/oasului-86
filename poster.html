@@ -14,35 +14,35 @@
   .toolbar p{font-size:13px;color:#3a342c}
   /* A4 sheet */
   .sheet{
-    width:794px;min-height:1123px;background:var(--cream);margin:0 auto;
-    box-shadow:0 18px 50px -18px rgba(0,0,0,.5);padding:54px 56px;display:flex;flex-direction:column
+    width:794px;height:1123px;background:var(--cream);margin:0 auto;overflow:hidden;
+    box-shadow:0 18px 50px -18px rgba(0,0,0,.5);padding:44px 52px;display:flex;flex-direction:column
   }
-  .ph-head{text-align:center;border-bottom:2px solid var(--ink);padding-bottom:20px}
+  .ph-head{text-align:center;border-bottom:2px solid var(--ink);padding-bottom:14px}
   .ph-eyebrow{font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:700}
-  .ph-title{font-family:"Cormorant Garamond",serif;font-size:52px;font-weight:700;line-height:1.04;margin:8px 0 6px}
-  .ph-sub{font-size:17px;color:var(--soft)}
-  .ph-photos{display:grid;grid-template-columns:1.6fr 1fr;gap:10px;margin:22px 0}
-  .ph-photos img{width:100%;height:100%;object-fit:cover;border-radius:8px;max-height:300px}
-  .ph-photos .col{display:grid;grid-template-rows:1fr 1fr;gap:10px}
-  .ph-photos .col img{max-height:145px}
-  .ph-body{display:flex;flex:1;align-items:center;justify-content:center;margin-top:6px}
+  .ph-title{font-family:"Cormorant Garamond",serif;font-size:44px;font-weight:700;line-height:1.04;margin:6px 0 5px}
+  .ph-sub{font-size:16px;color:var(--soft);line-height:1.5}
+  .ph-photos{display:grid;grid-template-columns:1.6fr 1fr;gap:9px;margin:16px 0}
+  .ph-photos img{width:100%;height:100%;object-fit:cover;border-radius:8px;max-height:232px}
+  .ph-photos .col{display:grid;grid-template-rows:1fr 1fr;gap:9px}
+  .ph-photos .col img{max-height:112px}
+  .ph-body{display:flex;flex:1;align-items:center;justify-content:center}
   .ph-qr{text-align:center}
-  .ph-qr img{width:300px;height:300px}
-  .ph-qr .scan{font-size:18px;color:var(--soft);margin-top:14px;line-height:1.4}
-  .ph-qr .url{font-weight:700;font-size:20px;color:var(--ink);word-break:break-all;margin-top:4px}
-  .ph-price{background:var(--ink);color:var(--cream);border-radius:12px;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;margin:20px 0 10px;flex-wrap:wrap;gap:10px}
-  .ph-price .p b{font-family:"Cormorant Garamond",serif;font-size:42px;display:block;line-height:1}
+  .ph-qr img{width:218px;height:218px}
+  .ph-qr .scan{font-size:16px;color:var(--soft);margin-top:12px;line-height:1.4}
+  .ph-qr .url{font-weight:700;font-size:18px;color:var(--ink);word-break:break-all;margin-top:4px}
+  .ph-price{background:var(--ink);color:var(--cream);border-radius:12px;padding:15px 24px;display:flex;justify-content:space-between;align-items:center;margin:14px 0 8px;flex-wrap:wrap;gap:10px}
+  .ph-price .p b{font-family:"Cormorant Garamond",serif;font-size:38px;display:block;line-height:1}
   .ph-price .p span{font-size:13px;color:#c9bda8;letter-spacing:.05em}
   .ph-price .badge{border:1px solid var(--gold);color:#e9d9be;border-radius:999px;padding:7px 16px;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
-  .ph-foot{text-align:center;border-top:2px solid var(--ink);padding-top:16px;margin-top:6px}
-  .ph-foot .name{font-family:"Cormorant Garamond",serif;font-size:30px;font-weight:600}
-  .ph-foot .tel{font-size:26px;font-weight:700;letter-spacing:.02em;margin-top:2px}
-  .ph-foot .meta{font-size:13px;color:var(--soft);margin-top:6px}
+  .ph-foot{text-align:center;border-top:2px solid var(--ink);padding-top:12px;margin-top:4px}
+  .ph-foot .name{font-family:"Cormorant Garamond",serif;font-size:27px;font-weight:600}
+  .ph-foot .tel{font-size:24px;font-weight:700;letter-spacing:.02em;margin-top:2px}
+  .ph-foot .meta{font-size:13px;color:var(--soft);margin-top:5px}
   @media print{
     @page{size:A4;margin:0}
-    body{background:#fff;padding:0}
+    html,body{background:#fff;padding:0;margin:0}
     .toolbar{display:none}
-    .sheet{box-shadow:none;margin:0;width:210mm;min-height:297mm;padding:14mm 15mm}
+    .sheet{box-shadow:none;margin:0;width:210mm;height:297mm;padding:11mm 15mm;overflow:hidden}
   }
 </style>
 </head>
