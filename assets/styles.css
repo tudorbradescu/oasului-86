@@ -29,6 +29,8 @@ a{color:inherit;text-decoration:none}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
 section{padding:84px 0}
 h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:.2px}
+/* use uniform-height (lining) figures for serif numbers instead of old-style */
+.price,.price-card b,.hero-stats b,.fact b{font-feature-settings:"lnum" 1,"tnum" 1;font-variant-numeric:lining-nums tabular-nums}
 h2{font-size:clamp(30px,4.4vw,46px);margin-bottom:8px}
 .eyebrow{
   font-family:var(--sans);font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;
